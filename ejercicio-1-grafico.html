@@ -25,16 +25,22 @@
   <script>// Define Data
 
     // un array de numbers, contiene los valores de la coordenada X, que son los m2
-    var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+    var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160]; // variable tipo array de numeros
 
     // un array de numbers, contiene los valores de la coordenada Y, que es el precio en millones de (dolares?)
-    var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+    var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15, 16];
 
     // un array con único objeto. Dicho objeto tiene 3 propiedades: la x, para indicar los valores de la coordenada X, la y para indicar los valroes de la coordenada Y y una propiedad que se llama 'mode' que es el tipo de marcador/estilo de cada uno de los valores
-    var data = [{
+    var data = [{ //esto es un objeto donde incluye arrays y strings
       x: xArray,
       y: yArray,
-      mode: "markers"
+      mode: "markers",
+      marker:{
+        color: "green",
+        symbol: "diamond",
+        size: 10
+      }
+      
     }];
 
     // Define Layout
@@ -43,8 +49,8 @@
     // range: es un array , el rango mínimo y máximo de la X
     // title: es un string, la leyenda del eje X
     var layout = {
-      xaxis: { range: [40, 180], title: "Square Meters" },
-      yaxis: { range: [5, 18], title: "Price in Millions" },
+      xaxis: { range: [40, 180], title: "Metros cuadrados" },
+      yaxis: { range: [5, 18], title: "Coste en millones" },
       title: "House Prices vs. Size"
     };
 

@@ -41,6 +41,15 @@ Crea un formulario que permita añadir nuevas coordenadas X,Y al gráfico actual
 3. Recuerda que hay que asociar un evento de tipo 'submit' al formulario
 4. Deberás actualizar las variables xArray y yArray con el valor de los campos del formulario
 5. Es necesario volver ejecutar la instrucción `    Plotly.newPlot("myPlot", data, layout);` para actualizar el gráfico.
+<!--   <form class="container">
+    <label for="x">X: </label>
+    <input type="number" name="x" id="x" min="40" max="180" required>
+    <label for="y">Y: </label>
+    <input type="number" name="y" id="y" min="5" max="18" required>
+    <input type="submit" value="Añadir valores">
+  </form> -->
+
+
 
 ### Apartado 4
 

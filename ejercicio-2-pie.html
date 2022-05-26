@@ -12,7 +12,7 @@
 
     <!-- Pico.css -->
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-
+    
 
 </head>
 
@@ -20,6 +20,23 @@
     <h1>Ploty JS</h1>
     <h2>Nos han pedido crear una gráfica tipo pastel sobre los lenguajes de programación más usados en el lado back end.
     </h2>
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+
+    var data = [{
+     values: [44, 33, 20, 3],
+    labels: ['PHP', 'JavaScript', 'Python', 'Otros'],
+     type: 'pie'
+    }];
+
+    var layout = {
+     height: 400,
+     width: 500
+    };
+
+    Plotly.newPlot('myPlot', data, layout);
+
     </script>
 </body>
 
